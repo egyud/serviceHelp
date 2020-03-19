@@ -1,0 +1,20 @@
+<%- include('partials/head.ejs') %>
+
+  <div class="page-wrapper">
+    <div class="content-wrapper">
+      <h1>Help the Temecula Valley Service Industry</h1>
+      <p>Every time you have a drink at home during social distancing, consider tipping a local service industry worker through Venmo. Refresh this page to get a new person to support.</p>
+      <p>Right now, service industry people are severely impacted by social distancing and quarantine. Lower amounts of patrons and restaurants closing will be tough on everyone. Every little bit helps.</p>
+      <h4 class="italic">Your random selection</h4>
+      <div class="tip-box">
+        <h3><%= name %></h3>
+        <p><%= workplace %></p>
+        <a href="<%= link %>">
+          <button class="tip-button">Tip on Venmo</button>
+        </a>
+      </div>
+      <p>If you are a service industry worker impacted by this in the Temecula Valley, please fill out <a href="/form">this form</a>.</p>
+    </div>
+  </div>
+</body>
+</html>

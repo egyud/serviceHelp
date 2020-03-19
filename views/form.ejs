@@ -1,0 +1,29 @@
+<%- include('partials/head.ejs') %>
+  <div class="form-page-wrapper">
+    <div class="form-wrapper">
+      <div class="input-wrapper">
+        <h1>Home Tipping</h1>
+        <p>If you are in the service industry in the Temecula Valley, fill out this form to receive random tips from random patrons, while they drink at home.</p>
+      </div>
+      <form action="http://localhost:3000/api/person" method="post" class="form">
+        <div class="input-wrapper">
+          <label for="name">Name</label>
+          <br>
+          <input class="input-text" type="text" name="name" id="name" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="venmo">Venmo User Name</label>
+          <br>
+          <input class="input-text" type="text" name="venmo" id="venmo" required>
+        </div>
+        <div class="input-wrapper">
+          <label for="workplace">Where Do You Work?</label>
+          <br>
+          <input class="input-text" type="text" name="workplace" id="workplace" required>
+        </div>
+        <button class="submit-btn" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
