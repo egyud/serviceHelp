@@ -5,6 +5,8 @@ const db = require('./config/config').mongoURI
 const app = express()
 const { fetchPerson } = require('./utils/fetchPerson')
 
+const PORT = process.env.PORT || 3000
+
 const personRoutes = require('./person/Person.routes')
 
 app.set('view engine', 'ejs')
@@ -45,4 +47,4 @@ mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useFindA
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error(err))
 
-app.listen(3000, () => console.log('App listening to port 3000'))
+app.listen(PORT, () => console.log(`App listening to port ${PORT}`))
