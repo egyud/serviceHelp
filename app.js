@@ -43,7 +43,7 @@ app.get('/success', (req, res) => {
 
 app.use('/api/person', personRoutes)
 
-mongoose.connect(db, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
+mongoose.connect(process.env.MONGODB_URI || db, { useNewUrlParser: true, useUnifiedTopology: true, useFindAndModify: false })
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error(err))
 
