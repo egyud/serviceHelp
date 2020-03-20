@@ -41,6 +41,10 @@ app.get('/form', (req, res) => {
   })
 })
 
+app.get('/privacy', (req, res) => {
+  res.render('privacy')
+})
+
 app.get('/success', (req, res) => {
   res.render('success')
 })
