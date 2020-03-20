@@ -22,6 +22,9 @@ app.get('/', async (req, res) => {
   try {
     let person = await fetchPerson()
     const { name, venmo, workplace } = person
+    if (venmo === undefined) {
+      return res.render('main2')
+    }
     let link = `https://venmo.com/${venmo}`
     res.render('main', {
       name,
