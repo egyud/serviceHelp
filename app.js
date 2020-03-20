@@ -23,13 +23,11 @@ app.get('/', async (req, res) => {
     let person = await fetchPerson()
     const { name, venmo, workplace } = person
     let link = `https://venmo.com/${venmo}`
-    if (name, venmo, workplace) {
-      res.render('main', {
-        name,
-        link,
-        workplace
-      })
-    }
+    res.render('main', {
+      name,
+      link,
+      workplace
+    })
   } catch (error) {
     console.error(error)
   }
