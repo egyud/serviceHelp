@@ -18,7 +18,7 @@ app.use(express.static('public'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
-app.get('http://helptemecula.com', async (req, res) => {
+app.get('http://helptemecula.com/', async (req, res) => {
   let person = await fetchPerson()
   const { name, venmo, workplace } = person
   let link = `https://venmo.com/${venmo}`
