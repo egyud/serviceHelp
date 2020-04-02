@@ -1,6 +1,6 @@
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   padding: 0;
   margin: 0;
 }
@@ -63,13 +63,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* form page */
-
-.form-page-wrapper {
-  background-color: gray;
-  background-size: cover;
-  width: 100%;
-  height: 100vh;
-}
 
 .form-wrapper {
   width: 80%;
