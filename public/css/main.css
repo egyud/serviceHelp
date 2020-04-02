@@ -15,7 +15,7 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  height: 100%
+  min-height: 100%
 }
 
 @media(min-width: 768px) {
@@ -23,18 +23,11 @@ h1, h2, h3, h4, h5, h6 {
   body {
     height: 100%;
   }
-}
-
-/* @media(max-width: 600px) {
-  html,
-  body {
-    min-height: 100%;
-  }
 
   .page-wrapper {
-    background: rgb(61, 149, 206);
+    height: 100%;
   }
-} */
+}
 
 .content-wrapper {
   width: 80%;
